@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계룡건설산업</title>
+    
+    <!-- mystyle.css 파일 불러와서 적용시키기 -->
+    <link rel="stylesheet" href="\resources_sjm\css\index_css.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        p{
+            font-weight: bold;
+            font-size: 27px;
+        }
+
+        div{
+            border: 0px solid black;
+            position: relative;
+        }
+
+        span{
+            display: block;
+            width: auto;
+        }
+
+        .container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container > div{
+            width: 62%;
+        }
+
+        .menu-name{
+            position: relative;
+        }
+
+        .menu-name-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-name-text-font{
+            color: white;
+        }
+        
+        .business_complain{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 60px;
+        }
+
+        .business_complain h5{
+            font-weight: normal;
+        }
+
+        .selectOne{
+            margin-bottom: 30px;
+        }
+
+        .selectOne > div{
+            display: flex;
+            justify-content: center;
+        }
+
+        .selectOne > div > a{
+            border: 0.5px solid black;
+
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            width: 25%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .select-Other:hover{
+            background-color: #ddd;
+            transition-duration: 0.5s;
+        }
+
+        .company-outline{
+            padding-bottom: 100px;
+        }
+
+        .company-outline > div:nth-child(1) > span{
+            padding-top: 30px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .company-outline > div:nth-child(2){
+            display: flex;
+        }
+
+        .company-outline-complain{
+            width: 80%;
+        }
+
+        .company-outline-complain > div{
+            display: flex;
+        }
+
+        .company-outline-complain-left{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            border: 0.5px solid black;
+
+            background-color: #f0f0f0;
+        }
+
+        .company-outline-complain-right{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            border: 0.5px solid black;
+
+            background-color: #f7f7f7;;
+        }
+    </style>
+</head>
+<body>
+    <!-- 상단 이미지 -->
+    <div class="menu-name">
+        <img width="100%"  height="190px"
+            src="https://now.rememberapp.co.kr/wp-content/uploads/2022/11/GettyImages-1433144605.jpg">
+        <div class="menu-name-text">
+            <p class="menu-name-text-font">투자정보</p>
+            <h5 class="menu-name-text-font">Home - 투자정보 - 기업지배구조</h5>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- 기업지배구조 소개 -->
+        <div class="business_complain">
+            <span class="line-margin" style="font-size: 23px; font-weight: bold;">
+                "믿음으로 성장해온 우량 건설기업!"
+            </span>
+            <hr class="line-margin" style="width: 30px; height: 4px; background-color: blue;">
+            <span class="line-margin" style="font-weight: bold; font-size: 15px;">회사개요</span>
+            <h5 class="line-margin">50여 년을 이어온  성장의 역사! 새로운 내일을 열어가는 바탕입니다.
+            </h5>
+        </div>
+
+        <!-- 기업지배구조 선택(4가지) -->
+        <div class="selectOne">
+            <div>
+                <a style="background-color: #0a71ce; color: white;" href="">회사개요</a>
+                <a class="select-Other" href=".\cor_govern2.html">주주총회 및 배당</a>
+                <a class="select-Other" href="">이사회 관련 사항</a>
+                <a class="select-Other" href="">정기보고서</a>
+            </div>
+        </div>
+
+        <div class="company-outline">
+            <div>
+                <span>회사개요</span>
+                <hr class="line-margin" style="width: 30px; height: 2px; background-color: blue;">
+            </div>
+            <div>
+                <img style="margin-right: 30px;"
+                    src="\resources_sjm\images\company_outline_img.PNG" alt="">
+                <div class="company-outline-complain">
+                    <div>
+                        <div class="company-outline-complain-left">회사명</div>
+                        <div class="company-outline-complain-right">계룡건설산업(주)</div>
+                    </div>
+                    <div>
+                        <div class="company-outline-complain-left">설립일</div>
+                        <div class="company-outline-complain-right">1978.10.11</div>
+                    </div>
+                    <div>
+                        <div class="company-outline-complain-left">상장일</div>
+                        <div class="company-outline-complain-right">1996.1.30</div>
+                    </div>
+                    <div>
+                        <div class="company-outline-complain-left">대표이사</div>
+                        <div class="company-outline-complain-right">오태식, 윤길호</div>
+                    </div>
+                    <div>
+                        <div class="company-outline-complain-left">대표업종</div>
+                        <div class="company-outline-complain-right">건설업</div>
+                    </div>
+                    <div>
+                        <div class="company-outline-complain-left">자본금</div>
+                        <div class="company-outline-complain-right">44,654,535,000원</div>
+                    </div>
+                    <div>
+                        <div class="company-outline-complain-left">결산기</div>
+                        <div class="company-outline-complain-right">12월</div>
+                    </div>
+                    <div>
+                        <div class="company-outline-complain-left">본점주소</div>
+                        <div class="company-outline-complain-right">대전광역시 서구 문정로 48번길 48(탄방동)</div>
+                    </div>
+                    <div>
+                        <div class="company-outline-complain-left">대표전화</div>
+                        <div class="company-outline-complain-right">042-480-7114</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- container endpoint -->
+
+    <!-- last layer -->
+    <div class="complain">
+        <div>
+            <p>CONTACT US</p>
+            <p><img 
+                width="150px"
+                src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg"></p>
+            <span>
+                <h4 style="color: blue; display: inline;">Tel</h4>
+                :042-480-7114
+            </span>
+            <span>
+                <h4 style="color: blue; display: inline;">Fax</h4>
+                :042-486-1615
+            </span>
+            <span>대전광역시 서구 문정로 48번길, 48</span>
+        </div>
+        <div>
+            <p>QUICK MENU</p>
+            <span> * 인트라넷</span>
+            <span> * e-PS </span>
+            <span> * 개인정보처리방침</span>
+            <span> * 채용정보 </span>
+            <span> * 오시는 길</span>
+        </div>
+        <div>
+            <p>LINK</p>
+            <img src="https://via.placeholder.com/120x75" alt="">
+            <img src="https://via.placeholder.com/120x75" alt="">
+            <img src="https://via.placeholder.com/120x75" alt="">
+        </div>
+    </div>
+
+    <!-- 공용 레이어(navigation) -->
+    <div class="navigation">
+        <a href="..\..\index.html">
+            <img width="150px" src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg">
+        </a>
+        
+        <div class="menu">
+            <div class="menu-each">
+                <a href="">계룡소개</a>
+                <div>
+                    <a href="..\..\계룡소개\회장인사말(원빈).html">회장 인사말</a>
+                    <a href="..\..\계룡소개\연혁(원빈).html">연혁</a>
+                    <a href="">경영방침</a>
+                    <a href="">인증 및 수상내역</a>
+                    <a href="">찾아오시는 길</a>
+                </div>
+            </div>
+            <div class="menu-each">
+                <a href="">투자정보</a>
+                <div>
+                    <a href="">기업재배구조</a>
+                    <a href="..\announcement\공고.html">공고</a>
+                </div>
+            </div>
+            <div class="menu-each">
+                <a href="">사업영역</a>
+                <div>
+                    <a href="..\..\사업영역\business(용성).html">건축</a>
+                    <a href="">주택</a>
+                    <a href="">토목</a>
+                    <a href="">해외</a>
+                    <a href="">플랜트</a>
+                    <a href="">산업단지개발</a>
+                    <a href="">레져 & 조경</a>
+                </div>
+            </div>
+            <div class="menu-each">
+                <a href="">지속가능경영</a>
+                <div>
+                    <a href="">ESG 경영개요</a>
+                    <a href="">환경경영</a>
+                    <a href="">상생경영</a>
+                    <a href="">품질경영</a>
+                    <a href="">윤리경영</a>
+                    <a href="">사회공헌</a>
+                    <a href="">안전보건경영</a>
+                </div>
+            </div>
+            <div>
+                <a href="">E-PS</a>
+            </div>
+            <div>
+                <a href="">채용안내</a>
+            </div>
+            <div class="menu-each">
+                <a href="">홍보센터</a>
+                <div>
+                    <a href="">기업PR</a>
+                    <a href="">계룡가족</a>
+                    <a href="">철인 3종 선수단</a>
+                    <a href="">고객센터</a>
+                </div>
+            </div>
+            <div>
+                <a href="">ENG</a>
+            </div>
+        </div>
+    </div>
+    <div class="last">© COPYRIGHT 2016. KYERYONG CONSTRUCTION INDUSTRIAL CO., LTD. ALL RIGHTS RESERVED.</div>
+</body>
+</html>

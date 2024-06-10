@@ -1,0 +1,99 @@
+/* 고정 layer */
+
+.navigation{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.navigation > a{
+    margin-left: 215px;
+}
+
+.navigation > div{
+    margin-right: 185px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+
+    padding: 20px;
+}
+
+.menu a:hover{
+    color: skyblue;
+}
+
+.menu-each{
+    position: relative;
+}
+
+.menu-each:hover > div{
+    visibility: visible;
+}
+
+.menu-each > div{
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+
+    padding-top: 17.5px;
+}
+
+.menu-each > div > a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    width: 125px;
+
+    padding: 10px;
+}
+
+.complain{
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+
+    padding-left: 20px;
+    color: white;
+}
+
+.complain span{
+    display: block;
+    width: auto;
+}
+
+.complain p{
+    font-weight: bold;
+}
+
+.complain > div{
+    padding: 30px;
+}
+
+.line-margin{
+    margin-bottom: 18px;
+}
+
+.last{
+    display: flex; 
+    justify-content: center;
+    background-color: black;
+    color: white;
+}

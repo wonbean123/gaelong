@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계룡건설산업</title>
+    
+    <!-- mystyle.css 파일 불러와서 적용시키기 -->
+    <link rel="stylesheet" href="./resources_sjm/css/index_css.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            border: 0px solid black;
+            position: relative;
+        }
+
+        span{
+            display: block;
+            width: auto;
+        }
+
+        .complain p{
+            font-weight: bold;
+        }
+
+        hr{
+            height: 1px;
+            background-color: black;
+            border: none;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 55px;
+        }
+
+        .container > div{
+            padding-bottom: 70px;
+        }
+
+        /* <!-- 이미지 및 텍스트 --> */
+        .main-img{
+            position: relative;
+        }
+
+        .img-text{
+            position: absolute;
+            top: 30%;
+            left: 25%;
+            color: white;
+            font-size: 25px;
+        }
+
+        .img-text h6{
+            font-weight: normal;
+
+            margin-top: 40px;
+        }
+
+        .line-margin{
+            margin-bottom: 18px;
+        }
+
+        /* <!-- 사업 소개 --> */
+        .business_complain{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .business_complain h5{
+            font-weight: normal;
+        }
+
+        /* <!-- 사업 종류 --> */
+
+        .business_card{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        .card-part{
+            position: relative;
+        }
+
+        .card-text-top{
+            position: absolute;
+            width: 100%;
+            top: 10px;
+        } 
+
+        .card-text-bottom{
+            position: absolute;
+            width: 100%;
+            bottom: 5px;
+        }
+
+        .card-text-bottom h6{
+            font-weight: normal;
+        }
+
+        /* <!-- <!-- 소식 --> --> */
+        .story{
+            display: flex;
+            justify-content: center;
+
+            padding-top: 70px;
+        }
+
+        .story-left{
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+        }
+
+        .story-left img{
+            padding-bottom: 10px;
+        }
+
+        .story-left p{
+            font-weight: bold;
+            font-size: 20px;
+
+            padding-bottom: 10px;
+        }
+
+        .story-right{
+            width: 40%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .story-right > div{
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .story-right p{
+            font-weight: bold;
+            font-size: 17px;
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        /* <!-- 공지사항 --> */
+        .notice{
+            display: flex;
+            justify-content: center;
+            background-color: #ccc;
+
+            padding-top: 60px;
+        }
+
+        .notice > div:nth-child(1){
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .notice > div:nth-child(1) > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            height: 15%;
+            
+            margin-bottom: 10px;
+        }
+
+        .notice > div:nth-child(1) > a{
+            font-size: 13px;
+
+            padding-bottom: 9px;
+            padding-left: 13px;
+        }
+
+        .notice > div:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        .notice > div:nth-child(2) a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            font-size: 21px;
+        }
+
+        .notice > div:nth-child(3){
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+                
+        .notice > div:nth-child(3) a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            font-size: 21px;
+        }
+
+        .notice h4{
+            color: white;
+        }
+
+        /* <!-- 유튜브 채널 --> */
+        .youtube{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding-top: 70px;
+        }
+
+        .youtube > div{
+            margin-bottom: 18px;
+        }
+
+        .youtube-layer1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .youtube-layer2{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .youtube-layer2 > div{
+            width: 22%;
+            margin-left: 35px;
+        }
+
+        .youtube-layer2 a{
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .youtube-layer2 > div p{
+            font-weight: bold;
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .youtube-layer2 > div h5{
+            font-weight: normal;
+        }
+
+        .youtube-layer3 > div{
+            display: flex;
+
+            background-color: red;
+            border: 1px solid red;
+            color: white;
+            border-radius: 20px;
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .youtube-layer3 > div:hover{
+            transition-duration: 1s;
+            background-color: white;
+            color: red;
+        }
+
+        /* <!-- 게룡소식 --> */
+        .gyelyongStory{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding-top: 70px;
+        }
+
+        .gyelyongStory > div{
+            margin-bottom: 18px;
+        }
+
+        .gyelyongStory-layer1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gyelyongStory-layer2{
+            display: flex;
+            justify-content: center;
+        }
+
+        .gyelyongStory-layer2-left{
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+        }
+
+        .gyelyongStory-layer2-left img{
+            padding-bottom: 10px;
+        }
+
+        .gyelyongStory-layer2-left p{
+            padding-bottom: 10px;
+        }
+
+        .gyelyongStory-layer2-right{
+            width: 40%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gyelyongStory-layer2-right > div{
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gyelyongStory-layer2-right p{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .gyelyongStory-layer3 > div{
+            display: flex;
+
+            background-color: blue;
+            border: 1px solid blue;
+            color: white;
+            border-radius: 20px;
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .gyelyongStory-layer3 > div:hover{
+            transition-duration: 1s;
+            background-color: white;
+            color: #0a71ce
+        }
+
+        .cooper-company{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding-top: 70px;
+        }
+
+        .cooper-company > div{
+            margin-bottom: 18px;
+        }
+
+        .cooper-company-layer1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cooper-company-layer2{
+            display: flex;
+            align-items: center;
+        }
+
+        .cooper-company-layer2 > a{
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 이미지 및 텍스트 -->
+    <div class="main-img">
+        <img 
+        width="100%"
+        src=".\resources_sjm\images\main_img1.png">
+        
+        <div class="img-text">
+            <span>한국은행 통합별관</span>
+            <h1>360' 건설 토털솔루션의 도약</h1>
+            <h6>
+                대한민국 종합은행 건물에 대한 100년만의 리노베이션 프로젝트프리콘(Pre-Con) 
+                <br>
+                서비스 등 스마트 기술로 건설 부문의 새로운 혁신을 이러갑니다.
+            </h6>
+        </div>
+    </div>
+
+    <!-- 최 외곽 -->
+    <div class="container">
+
+        <!-- 사업 소개 -->
+        <div class="business_complain">
+            <span class="line-margin" style="font-size: 23px; font-weight: bold;">
+                우리가 꿈구는 미래를 건설합니다.
+            </span>
+            <hr class="line-margin" style="width: 30px; height: 4px; background-color: blue;">
+            <span class="line-margin" style="font-weight: bold; font-size: 15px;">OUR BUSINESS</span>
+            <h5 class="line-margin">4차 산업혁명 시대에 필요한 선진기술 도입, 자체 기술 개발, 
+                그리고 우수 인재를 보유하여 건축, 토목, 주택, 플랜트 등 
+            </h5>
+            <h5>
+                지속적인 사업영역의 확장을 통해 초일류기업으로 도약하고자 합니다.
+            </h5>
+        </div>
+
+        <!-- 사업 종류(5개) -->
+        <div class="business_card">
+            <div class="card-part">
+                <img src="https://via.placeholder.com/185x260">
+                <div class="card-text-top">
+                    <h6>대전 베이스볼드림파크</h6>
+                </div>
+                <div class="card-text-bottom">
+                    <h3 class="card-text">건축</h3>
+                    <h6 class="card-text">새로운 역사와 문화를 창조합니다.</h6>
+                </div>
+            </div>
+            <div class="card-part">
+                <img src="https://via.placeholder.com/185x260">
+                <div class="card-text-top">
+                    <h6>한샘대교</h6>
+                </div>
+                <div class="card-text-bottom">
+                    <h3 class="card-text">토목</h3>
+                    <h6 class="card-text">세상을 연결하며 변화를 이끕니다.</h6>
+                </div>
+            </div>
+            <div class="card-part">
+                <img src="https://via.placeholder.com/185x260">
+                <div class="card-text-top">
+                    <h6>대전소각장</h6>
+                </div>
+                <div class="card-text-bottom">
+                    <h3 class="card-text">플랜트</h3>
+                    <h6 class="card-text">우수 기술력으로 가치를 창출합니다.</h6>
+                </div>
+            </div>
+            <div class="card-part">
+                <img src="https://via.placeholder.com/185x260">
+                <div class="card-text-top">
+                    <h6>엘리프 송촌 더 파크</h6>
+                </div>
+                <div class="card-text-bottom">
+                    <h3 class="card-text">주택</h3>
+                    <h6 class="card-text">새로운 삶의 방식을 만들어갑니다</h6>
+                </div>
+            </div>
+            <div class="card-part">
+                <img src="https://via.placeholder.com/185x260">
+                <div class="card-text-top">
+                    <h6>남공주산업단지</h6>
+                </div>
+                <div class="card-text-bottom">
+                    <h3 class="card-text">산업단지</h3>
+                    <h6 class="card-text">산업 환경의 첨단화를 실현합니다</h6>
+                </div>
+            </div>
+        </div>
+
+        <hr style="height: 0.08px; width: 100%;">
+
+        <!-- 소식 -->
+        <div class="story">
+            <div class="story-left">
+                <img width="auto" src="https://via.placeholder.com/555x330">
+                <p>사회공헌</p>
+                <span>
+                    계룡건설은 모두가 더 나은 미래를 살아갈 수 있도록 지속적인 사회공헌을 통해 지역 
+                </span>
+                <span style="margin-bottom: 5px;">
+                    주민과 함께 소통하며 행복을 나누고, 삶의 질 향상에 기여하고자 합니다.
+                </span>
+                <span>
+                    또한 계룡장학재단과 함께 미래세대를 위해 장학금 지급, 유림공원 사생대회, 
+                </span>
+                <span>
+                    도시건축여행, 아이디어 공모전 등 다양한 사회공헌 프로그램을 제공합니다.
+                </span>
+            </div>
+            <div class="story-right">
+                <div>
+                    <img width="auto" src="https://via.placeholder.com/262x154">
+                    <p>창립50주년 기념 책자 - 50 STEPS</p>
+                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                </div>
+                <div>
+                    <img width="auto" src="https://via.placeholder.com/262x154">
+                    <p>창립50주년 기념 책자 - 50 STEPS</p>
+                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                </div>
+                <div>
+                    <img width="auto" src="https://via.placeholder.com/262x154">
+                    <p>창립50주년 기념 책자 - 50 STEPS</p>
+                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                </div>
+                <div>
+                    <img width="auto" src="https://via.placeholder.com/262x154">
+                    <p>창립50주년 기념 책자 - 50 STEPS</p>
+                    <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 공지사항 -->
+        <div class="notice">
+            <div>
+                <div>
+                    <h4>NOTICE</h4>
+                </div>
+                <a href="">[공시] 투자판단 관련 주요경영사항</a>
+                <a href="">[공시] 단일판매ㆍ공급계약 체결</a>
+                <a href="">[공시] 기업지배구조보고서공시</a>
+                <a href="">[공시] 대표이사(대표집행임원) 변경(안내공시)</a>
+                <a href="">[공시] 타인에대한채무보증결정</a>
+                <a href="">[공시] 채무인수 결정</a>
+            </div>
+            <div>
+                <a href=""><img src="https://via.placeholder.com/359x121"></a>
+                <a href=""><p>채용안내</p></a>
+                <br>
+                <span>
+                    계룡건설은 언제나 인재를 제일로 생각합니다.
+                    <br>
+                    기업경쟁력은 조직구성원의 지식과 창의력에 좌우되며, 기업이윤의 근본은 인적자원의 관리에 있다는 인간중시의 경영을 최우선으로 합니다. 
+                    계룡건설은 능력있고 패기있는 인재들의 지원을 언제나 기다립니다.
+                </span>
+            </div>
+            <div>
+                <a href=""><img src="https://via.placeholder.com/359x121"></a>
+                <a href=""><p>ELIF - 계룡건설의 주거 브랜드</p></a>
+                <br>
+                <span>
+                    계룡건설은 리슈빌과 로덴하우스의 브랜드 경험과 신뢰를 바탕으로 현대인들의 취향과 개성에 맞는 프리미엄 공간 구현을 통해 
+                    '일상을 새롭게 하다'라는 고유의 브랜드 철학을 담아 주거 브랜드를 런칭하였습니다.
+                    <br>
+                    이제 'ELIF'로 여러분의 일상에 새롭게 다가갑니다.
+                </span>
+            </div>
+        </div>
+
+        <!-- 유튜브 채널 -->
+        <div class="youtube">
+            <div class="youtube-layer1">
+                <span class="line-margin" style="font-size: 23px; font-weight: bold;">
+                    소셜채널_해볼계룡
+                </span>
+                <hr class="line-margin" style="width: 30px; height: 4px; background-color: blue;">
+                <h5 class="line-margin" style="font-weight: normal;">무엇이든 도전, 해볼계룡!
+                    계룡의 다양한 도전과 새로운 시도, 영상으로 만나보세요.
+                </h5>
+            </div>
+            <div class="youtube-layer2">
+                <div>
+                    <a href=""><img width="100%" src=".\resources_sjm\images\youtube_sumnail1.png"></a>
+                    <a href=""><p>출근길 텐션 UP! 플레이리스트</p></a>
+                    <h5>
+                        만원 지하철도 이겨내게 해주는
+                        <br>
+                        활기 가득한 플레이리스트
+                    </h5>
+                </div>
+                <div>
+                    <a href=""><img width="100%" src=".\resources_sjm\images\youtube_sumnail2.png"></a>
+                    <a href=""><p>친환경 고슴도치에게 선물한 바이오에너지 센터</p></a>
+                    <h5>
+                        작지만 큰 존재들 :
+                        <br>
+                        고슴도치와 대전 바이오에너지 센터
+                    </h5>
+                </div>
+                <div>
+                    <a href=""><img width="100%" src=".\resources_sjm\images\youtube_sumnail3.png"></a>
+                    <a href=""><p>대전 베이스볼 드림파크X레고</p></a>
+                    <h5>
+                        13,741개의 블록으로 만나는
+                        <br>
+                        익스트림한 일상을 즐기는 사람들
+                    </h5>
+                </div>
+            </div>
+            <div class="youtube-layer3">
+                <div>
+                    <span>해볼계룡 유튜브 채널&nbsp;</span>
+                    <img width="20px" height="20px" src=".\resources_sjm\images\youtube_icon-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+
+        <hr style="height: 0.08px; width: 100%;">
+
+        <!-- 계룡 소식 -->
+        <div class="gyelyongStory">
+            <div class="gyelyongStory-layer1">
+                <span class="line-margin" style="font-size: 23px; font-weight: bold;">
+                    소셜채널_계룡가족
+                </span>
+                <hr class="line-margin" style="width: 30px; height: 4px; background-color: blue;">
+                <h5 class="line-margin" style="font-weight: normal;">
+                    계룡그룹의 다양한 소식을 전해드립니다.
+                    <br>
+                    유익하고 다채로운 계룡가족의 이야기, 웹진으로 만나보세요.
+                </h5>
+            </div>
+            <div class="gyelyongStory-layer2">
+                <div class="gyelyongStory-layer2-left">
+                    <img width="auto" src="https://via.placeholder.com/555x330">
+                    <p>계룡가족 - 2024년 04월호</p>
+                    <span>
+                        계룡그룹의 이야기를 담은 소통형 웹진 '계룡가족'을 소개합니다.
+                        <br>
+                        신규 소식부터 사내 문화 등 다채로운 계룡의 이야기를 만날 수 있습니다. 
+                    </span>
+                </div>
+                <div class="gyelyongStory-layer2-right">
+                    <div>
+                        <img width="auto" src="https://via.placeholder.com/262x154">
+                        <p>타운홀미팅</p>
+                        <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                    </div>
+                    <div>
+                        <img width="auto" src="https://via.placeholder.com/262x154">
+                        <p>엘리프 세종, 왕중왕전</p>
+                        <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                    </div>
+                    <div>
+                        <img width="auto" src="https://via.placeholder.com/262x154">
+                        <p>고마움을 표현해봄</p>
+                        <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                    </div>
+                    <div>
+                        <img width="auto" src="https://via.placeholder.com/262x154">
+                        <p>눈 감으면 보이는 세상</p>
+                        <span>새로운 미래를 그려가는 계룡의 이야기</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gyelyongStory-layer3">
+                <div>
+                    <span>계룡가족 바로가기 &nbsp;</span>
+                    <img width="20px" height="20px" src=".\resources_sjm\images\화살표-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+
+        <hr style="height: 0.08px; width: 100%;">
+
+        <!-- 계룡 가족 회사 -->
+        <div class="cooper-company">
+            <div class="cooper-company-layer1">
+                <span class="line-margin" style="font-size: 23px; font-weight: bold;">
+                    계룡건설의 가족회사
+                </span>
+                <hr class="line-margin" style="width: 30px; height: 4px; background-color: blue;">
+                <h5 class="line-margin" style="font-weight: normal;">
+                    깨끗하고 건강한 기업문화, 끊임없는 도전으로 세상에 새로운 꿈을 전하는 이름이 되겠습니다.
+                </h5>
+            </div>
+
+            <div class="cooper-company-layer2">
+                <a href="">
+                    <img src="https://via.placeholder.com/196x120">
+                </a>
+                <a href="">
+                    <img src="https://via.placeholder.com/196x120">
+                </a>
+                <a href="">
+                    <img src="https://via.placeholder.com/196x120">
+                </a>
+                <a href="">
+                    <img src="https://via.placeholder.com/196x120">
+                </a>
+                <a href="">
+                    <img src="https://via.placeholder.com/196x120">
+                </a>
+                <a href="">
+                    <img src="https://via.placeholder.com/196x120">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- last layer -->
+    <div class="complain">
+        <div>
+            <p>CONTACT US</p>
+            <p><img 
+                width="150px"
+                src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg"></p>
+            <span>
+                <h4 style="color: blue; display: inline;">Tel</h4>
+                :042-480-7114
+            </span>
+            <span>
+                <h4 style="color: blue; display: inline;">Fax</h4>
+                :042-486-1615
+            </span>
+            <span>대전광역시 서구 문정로 48번길, 48</span>
+        </div>
+        <div>
+            <p>QUICK MENU</p>
+            <span> * 인트라넷</span>
+            <span> * e-PS </span>
+            <span> * 개인정보처리방침</span>
+            <span> * 채용정보 </span>
+            <span> * 오시는 길</span>
+        </div>
+        <div>
+            <p>LINK</p>
+            <img src="https://via.placeholder.com/120x75" alt="">
+            <img src="https://via.placeholder.com/120x75" alt="">
+            <img src="https://via.placeholder.com/120x75" alt="">
+        </div>
+    </div>
+
+    <!-- 공용 레이어(navigation) -->
+    <div class="navigation">
+        <a href="">
+            <img width="150px" src="https://pds.saramin.co.kr/company/logo/202307/25/rybs5n_b48i-1mq885e_logo.jpg">
+        </a>
+        
+        <div class="menu">
+            <div class="menu-each">
+                <a href="">계룡소개</a>
+                <div>
+                    <a href=".\계룡소개\회장인사말(원빈).html">회장 인사말</a>
+                    <a href=".\계룡소개\연혁(원빈).html">연혁</a>
+                    <a href="">경영방침</a>
+                    <a href="">인증 및 수상내역</a>
+                    <a href="">찾아오시는 길</a>
+                </div>
+            </div>
+            <div class="menu-each">
+                <a href="">투자정보</a>
+                <div>
+                    <a href=".\invest_inf\corporate_governance\cor_govern1.html">기업재배구조</a>
+                    <a href=".\invest_inf\announcement\공고.html">공고</a>
+                </div>
+            </div>
+            <div class="menu-each">
+                <a href="">사업영역</a>
+                <div>
+                    <a href=".\사업영역\business(용성).html">건축</a>
+                    <a href="">주택</a>
+                    <a href="">토목</a>
+                    <a href="">해외</a>
+                    <a href="">플랜트</a>
+                    <a href="">산업단지개발</a>
+                    <a href="">레져 & 조경</a>
+                </div>
+            </div>
+            <div class="menu-each">
+                <a href="">지속가능경영</a>
+                <div>
+                    <a href="">ESG 경영개요</a>
+                    <a href="">환경경영</a>
+                    <a href="">상생경영</a>
+                    <a href="">품질경영</a>
+                    <a href="">윤리경영</a>
+                    <a href="">사회공헌</a>
+                    <a href="">안전보건경영</a>
+                </div>
+            </div>
+            <div>
+                <a href="">E-PS</a>
+            </div>
+            <div>
+                <a href="">채용안내</a>
+            </div>
+            <div class="menu-each">
+                <a href="">홍보센터</a>
+                <div>
+                    <a href="">기업PR</a>
+                    <a href="">계룡가족</a>
+                    <a href="">철인 3종 선수단</a>
+                    <a href="">고객센터</a>
+                </div>
+            </div>
+            <div>
+                <a href="">ENG</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="last">© COPYRIGHT 2016. KYERYONG CONSTRUCTION INDUSTRIAL CO., LTD. ALL RIGHTS RESERVED.</div>
+</body>
+</html>
